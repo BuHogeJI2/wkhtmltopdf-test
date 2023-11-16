@@ -1,5 +1,4 @@
 import wkhtmltopdf from 'wkhtmltopdf';
-const wkhtmltoimage = require('wkhtmltoimage');
 import * as fs from "fs";
 
 async function makeImage(html: string): Promise<Buffer> {
