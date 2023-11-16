@@ -59,7 +59,7 @@
   dependencies:
     tslib "^2.4.0"
 
-"@types/node@^20":
+"@types/node@*", "@types/node@^20":
   version "20.9.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.9.0.tgz#bfcdc230583aeb891cf51e73cfdaacdd8deae298"
   integrity sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==
@@ -92,6 +92,13 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.6.tgz#eb26db6780c513de59bee0b869ef289ad3068711"
   integrity sha512-Vlktnchmkylvc9SnwwwozTv04L/e1NykF5vgoQ0XTmI8DD+wxfjQuHuvHS3p0r2jz2x2ghPs2h1FVeDirIteWA==
 
+"@types/wkhtmltopdf@^0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@types/wkhtmltopdf/-/wkhtmltopdf-0.3.7.tgz#e479eb77fc1ed4f4683e9455bae5293031b297ba"
+  integrity sha512-TC3i6ibQZT7GeZxLxA6G7tRLZh3MprZGlm9KbGAM3bNSBVJmZxwqm5Grbyjq4zD/oVhxOXg2QURgbK3cDtFcnw==
+  dependencies:
+    "@types/node" "*"
+
 busboy@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/busboy/-/busboy-1.6.0.tgz#966ea36a9502e43cdb9146962523b92f531f6893"
@@ -123,6 +130,11 @@ graceful-fs@^4.1.2:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
+
+is-stream@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+  integrity sha512-uQPm8kcs47jx38atAcWTVxyltQYoPT68y9aWYdV6yWXSyW8mzSat0TL6CiWdZeCdF3KrAvpVtnHbTv4RN+rqdQ==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
@@ -200,6 +212,11 @@ scheduler@^0.23.0:
   dependencies:
     loose-envify "^1.1.0"
 
+slang@>=0.2:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/slang/-/slang-0.3.0.tgz#13af75b4f0c018c6a8193d704f65b23be4fbabdc"
+  integrity sha512-kGj3TvxSDR1Enhig/aan5ucfWNDULTiWg3NrExUzO2ShXcYsm6k2oPxnav8GtslYvozxRAqL+E2O3P3QKtQYSg==
+
 source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
@@ -239,3 +256,16 @@ watchpack@2.4.0:
   dependencies:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
+
+wkhtmltoimage@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/wkhtmltoimage/-/wkhtmltoimage-0.1.5.tgz#81770db82b4e47d7f66119ca9b6d405d38fd6cd7"
+  integrity sha512-foJt2a6gVE0vHOimD+jOV1d9GznaWx/X5OeS1XgE2SuHngMTXYYmCaYtI6U9TmS0MWpdwR/9B/SmZUiGEsT5dw==
+
+wkhtmltopdf@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/wkhtmltopdf/-/wkhtmltopdf-0.4.0.tgz#b5675b57c661a1a43b55d88e46fea7bb7ebdf608"
+  integrity sha512-PXvsPehsmP1HeUDPx5qofitc+TJ0+Gb4Xn11iPJnHrLgXwyzRUzn9/b2t+soE+fwBMqUPs4Wchd0CRW+52MkNQ==
+  dependencies:
+    is-stream "^1.0.1"
+    slang ">=0.2"
